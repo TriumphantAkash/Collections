@@ -1,8 +1,10 @@
 package collections_handson;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
-public class App {
+public class ArrayListDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -33,9 +35,17 @@ public class App {
 		//remove items from the start of list a little slower, cuz internally it is an array
 		numbers.remove(0);
 		
-//		//List interface ...
-//		List <String> numbers  = new ArrayList<String>()
+		LinkedList<Integer> linkedList = new LinkedList<Integer>();
+		ArrayList<Integer> arrayList = new ArrayList<Integer>();
+		
+		doTimings("LinkedList", linkedList);
+		doTimings("ArrayList", arrayList);
 		
 	}
+	
+	private static void doTimings(String type, List<Integer> list) {
+		System.out.println(type);
+	}
+	
 
 }
