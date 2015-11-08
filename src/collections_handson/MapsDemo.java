@@ -1,6 +1,7 @@
 package collections_handson;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class MapsDemo {
 
@@ -18,6 +19,14 @@ public class MapsDemo {
 		
 		String number = map.get(8);
 		System.out.println(number);
+		
+		System.out.println("******************************");
+		
+		for(Map.Entry<Integer, String> entry: map.entrySet()) {
+			entry.getKey();
+			entry.getValue();
+			System.out.println(entry+"\n");
+		}
 		
 	}
 
