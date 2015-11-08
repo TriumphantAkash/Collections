@@ -35,7 +35,7 @@ public class LinkedListDemo {
 //		System.out.println("Time taken: " + (endE-startE) + " ms for " + type + " while adding items to end of list");
 		
 		
-		//adding to the beginning of the list
+		//adding to the end of the list
 		long startB = System.currentTimeMillis();
 		
 		for (int i=0; i<1E5; i++) {
@@ -44,7 +44,7 @@ public class LinkedListDemo {
 		
 		long endB = System.currentTimeMillis();
 		
-		System.out.println("Time taken: "+ (endB-startB) + " ms for " + type + " while adding item to the beginning of list");
+		System.out.println("Time taken: "+ (endB-startB) + " ms for " + type + " while adding item to the end of list");
 		
 	}
 }
