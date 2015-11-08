@@ -50,20 +50,20 @@ public class ListHandsOn {
 		System.out.println("*************************************************************************************");
 		
 		start = System.currentTimeMillis();
-		for(int i = 0; i<1E5; i++) {
+		for(int i = 0; i<1E4; i++) {
 			arrayList.add(0, 69);
 		}
 		end = System.currentTimeMillis();
 		
-		System.out.println("time taken to add 200,000 items to the start of arrayList is: "+ (end - start));
+		System.out.println("time taken to add 10,000 items to the start of arrayList is: "+ (end - start));
 		
 		start = System.currentTimeMillis();
-		for (int i=0; i<1E5; i++) {
+		for (int i=0; i<1E4; i++) {
 			linkedList.add(0, 69);
 		}
 		
 		end = System.currentTimeMillis();
-		System.out.println("time taken to add 200,000 items at the start of linkedlist is: "+ (end - start));
+		System.out.println("time taken to add 10,000 items at the start of linkedlist is: "+ (end - start));
 		
 		
 	}
