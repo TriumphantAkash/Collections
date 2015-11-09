@@ -21,7 +21,7 @@ public class SomeMoreMaps {
 //			System.out.println(entry.getKey() + ":" + entry.getValue());
 //		}
 		
-		testMap(hashMap);	//HashMap does not guarantee any particular order in which it has to be stored
+		testMap(hashMap);	//HashMap does not guarantee any particular order in which the items were stored
 		testMap(linkedHashMap);	//LinkedHashMap stores the data in the same order they were inserted in the map
 		testMap(treeMap);	//TreeMap sorts the entries according to the Key value in each entry
 	}
