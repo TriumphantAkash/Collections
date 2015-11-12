@@ -119,6 +119,24 @@ public class ListSorting {
 			System.out.println(number);
 		}
 		
+		System.out.println("########### sorting integers in reverse order using a custom comparator ###########");
+		Collections.sort(numbers, new Comparator<Integer>() {
+
+			@Override
+			public int compare(Integer i1, Integer i2) {
+				if(i1>i2){
+					return -1;
+				}else if(i1<i2) {
+					return 1;
+				}else {
+					return 0;
+				}
+			}});
+		
+		for(int number: numbers) {
+			System.out.println(number);
+		}
+		
 		
 	}
 
