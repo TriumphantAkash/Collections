@@ -41,6 +41,21 @@ class StringAlphabeticalComparator implements Comparator<String> {
 }
 	
 
+class ReverseAlphabeticalComparator implements Comparator<String> {
+
+	@Override
+	public int compare(String s1, String s2) {
+		if(s1.compareTo(s2) > 0) {
+			return -1;
+		}else if(s1.compareTo(s2)<0) {
+			return 1;
+		}else {
+			return 0;
+		}
+	}
+	
+}
+
 
 public class ListSorting {
 
@@ -73,6 +88,15 @@ public class ListSorting {
 		System.out.println("########### sorting strings using alphabetical comparator ###########");
 		StringAlphabeticalComparator compAlpha = new StringAlphabeticalComparator();
 		Collections.sort(animals, compAlpha);
+		
+		//System.out.println(animals);
+		for(String animal: animals) {
+			System.out.println(animal);
+		}
+		
+		System.out.println("########### sorting strings using Reverse alphabetical comparator ###########");
+		ReverseAlphabeticalComparator revCompAlpha = new ReverseAlphabeticalComparator();
+		Collections.sort(animals, revCompAlpha);
 		
 		//System.out.println(animals);
 		for(String animal: animals) {
