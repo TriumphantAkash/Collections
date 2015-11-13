@@ -1,4 +1,4 @@
-package collections_handson;
+package multiThreading;
 
 public class sdasd {
 
