@@ -13,6 +13,7 @@ class Person {
 	
 	//hashCode() and equals() methods are useful for CONSERVING the NO-DUPLICATE
 	//property of sets and maps
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
