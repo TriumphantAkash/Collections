@@ -14,9 +14,9 @@ class StringLengthComparator implements Comparator<String> {
 		int len2 = s2.length();
 		
 		if(len1 > len2) {
-			return -1;
-		}else if(len1 < len2){
 			return 1;
+		}else if(len1 < len2){
+			return -1;
 		}else{
 			return 0;
 		}

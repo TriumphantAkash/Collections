@@ -1,4 +1,4 @@
-package collections_handson;
+package multiThreading;
 
 public class ThreaderExample extends Thread {
 String a ;
