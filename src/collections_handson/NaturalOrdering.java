@@ -65,7 +65,9 @@ class Person1 implements Comparable<Person1>{
 		} else if (this.name.length() < person1.name.length()) {
 			return -1;
 		} else {
-			return 0;
+			//need to further distinguish between the elements having same length
+			//return 0;
+			return this.name.compareTo(person1.name);
 		}
 		
 	}
@@ -85,9 +87,9 @@ public class NaturalOrdering {
 		Collections.sort(list);
 		showElements(list);
 		
-//		System.out.println();
-//		addElements(set);
-//		showElements(set);
+		System.out.println();
+		addElements(set);
+		showElements(set);
 	}
 	
 	
