@@ -60,14 +60,14 @@ class Person1 implements Comparable<Person1>{
 	//for sorting based on the string length
 	@Override
 	public int compareTo(Person1 person1) {
-		if(this.name.length() > person1.name.length()) {
-			return 1;
+		if(this.name.length() > person1.name.length()) {	//in this case I am assuming 'this' object to be greater and thus returning 1 so that during sorting it is placed later
+			return 1;			//the object in here is greater than the passed object
 		} else if (this.name.length() < person1.name.length()) {
-			return -1;
+			return -1;			//the object in here is smaller than the passed object
 		} else {
 			//need to further distinguish between the elements having same length
 			//return 0;
-			return this.name.compareTo(person1.name);
+			return this.name.compareTo(person1.name);//put the elements in alphabetical order if the elements are of equal lengths
 		}
 		
 	}
@@ -84,7 +84,7 @@ public class NaturalOrdering {
 		SortedSet<Person1> set = new TreeSet<Person1>();
 		
 		addElements(list);
-		//Collections.sort(list);
+		Collections.sort(list);
 		showElements(list);
 		
 		System.out.println();
