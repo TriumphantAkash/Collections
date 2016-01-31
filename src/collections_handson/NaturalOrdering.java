@@ -22,7 +22,7 @@ public class NaturalOrdering {
 		SortedSet<String> set = new TreeSet<String>();
 		
 		addElements(list);
-		Collections.sort(list);
+		//Collections.sort(list);
 		showElements(list);
 		
 		System.out.println();
